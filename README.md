@@ -32,5 +32,17 @@ search .
 (\.|^)nflximg\.net$
 (\.|^)nflxso\.net$
 (\.|^)nflxext\.com$
+
+docker rm $(docker ps -a -q --filter "status=created")
+docker rm $(docker ps -a -q --filter "status=exited")
+
+docker image prune
+
+docker builder prune -a
+
+docker system df
+df -h
+
+
 (\.|^)netflix\.net$
 
