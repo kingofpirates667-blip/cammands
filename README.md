@@ -24,3 +24,13 @@ docker inspect --format='{{json .State.Health}}' pihole
 nameserver 127.0.0.53
 options edns0 trust-ad
 search .
+
+
+
+(\.|^)netflix\.com$
+(\.|^)nflxvideo\.net$
+(\.|^)nflximg\.net$
+(\.|^)nflxso\.net$
+(\.|^)nflxext\.com$
+(\.|^)netflix\.net$
+
