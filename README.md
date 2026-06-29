@@ -46,3 +46,6 @@ df -h
 
 (\.|^)netflix\.net$
 
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.1.206' WAZUH_AGENT_NAME='Win-11' 
+
+
