@@ -49,3 +49,6 @@ df -h
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.1.206' WAZUH_AGENT_NAME='Win-11' 
 
 curl -fsSL https://tailscale.com/install.sh | sh
+
+
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='100.104.186.52' WAZUH_AGENT_NAME='win-11' 
